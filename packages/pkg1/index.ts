@@ -1,0 +1,1 @@
+export type Example1 = 1;
