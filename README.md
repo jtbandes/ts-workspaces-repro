@@ -12,4 +12,4 @@ Steps to reproduce:
 
 4. Add
     `"compilerOptions": { "importsNotUsedAsValues": "preserve" }` to [tsconfig.json](tsconfig.json). Now, observe that changing `pkg1/index.ts` **does** cause webpack to recompile. ✅
-    - Change `import {Example1} from 'pkg1'` to `import type {Example1} from 'pkg1'` in [src/index.ts](src/index.ts). Observe that changing `pkg/1index.ts` again **does not** result in a recompile. ❌
+    - Change `import {Example1} from 'pkg1'` to `import type {Example1} from 'pkg1'` in [src/index.ts](src/index.ts). Observe that changing `pkg1/index.ts` again **does not** result in a recompile. ❌ (This is because `"importsNotUsedAsValues": "preserve"` does not affect explicit `import type` imports, which are always removed.)
