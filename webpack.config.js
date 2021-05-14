@@ -13,7 +13,9 @@ module.exports = {
         loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
+          // compilerOptions: { noEmit: true },
           transpileOnly: true,
+          projectReferences: true,
         },
       },
     ],

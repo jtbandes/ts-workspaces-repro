@@ -4,7 +4,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "fork-ts-checker-webpack-plugin": "^6.2.6",
+    "fork-ts-checker-webpack-plugin": "^6.2.9",
     "ts-loader": "^9.1.2",
     "typescript": "^4.2.4",
     "webpack": "^5.37.0",
