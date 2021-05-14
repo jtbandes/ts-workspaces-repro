@@ -1,3 +1,11 @@
 {
-    "include": ["./src/*.ts"]
+    "include": ["./src/*.ts"],
+    "references": [
+        {
+            "path":"./packages/pkg1"
+        },
+        {
+            "path": "./packages/pkg2"
+        }
+    ]
 }
